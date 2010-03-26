@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetKillswitch.Core", "DotNetKillswitch.Core\DotNetKillswitch.Core.csproj", "{213A48D7-AEEC-4A8A-81D6-C8273B9C5773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetKillswitch.Tests", "DotNetKillswitch.Tests\DotNetKillswitch.Tests.csproj", "{B0B5BCDD-5415-4895-B08E-33E576FA5CBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetKillswitch.Web", "DotNetKillswitch.Web\DotNetKillswitch.Web.csproj", "{E720241B-FF63-4D04-A341-A53873FA2AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetKillswitch.Core.Client", "DotNetKillswitch.Core.Client\DotNetKillswitch.Core.Client.csproj", "{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4D047295-8E22-4073-A1FE-EADACCBDEF5E}"
+	ProjectSection(SolutionItems) = preProject
+		Constants.cs = Constants.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{213A48D7-AEEC-4A8A-81D6-C8273B9C5773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{213A48D7-AEEC-4A8A-81D6-C8273B9C5773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{213A48D7-AEEC-4A8A-81D6-C8273B9C5773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{213A48D7-AEEC-4A8A-81D6-C8273B9C5773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B5BCDD-5415-4895-B08E-33E576FA5CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B5BCDD-5415-4895-B08E-33E576FA5CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B5BCDD-5415-4895-B08E-33E576FA5CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B5BCDD-5415-4895-B08E-33E576FA5CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E720241B-FF63-4D04-A341-A53873FA2AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E720241B-FF63-4D04-A341-A53873FA2AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E720241B-FF63-4D04-A341-A53873FA2AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E720241B-FF63-4D04-A341-A53873FA2AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
