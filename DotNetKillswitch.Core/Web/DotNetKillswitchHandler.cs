@@ -32,9 +32,6 @@ namespace DotNetKillswitch.Core.Web
 
                 var query = context.Request.Path.Remove(0, 1);
             
-                // someone is trying to do a css blackout
-                var isCss = query.Contains(Constants.Prefix);
-
                 query = query.Replace(Constants.Prefix, string.Empty);
 
                 if (!string.IsNullOrEmpty(query))
@@ -44,19 +41,9 @@ namespace DotNetKillswitch.Core.Web
                     if (!Guid.TryParse(query, out id) || !_clientService.IsBlackListed(id))
                         return;
 
-                    if (isCss)
-                    {
-                        // this is a css blackout
-                        context.Response.ContentType = Constants.CssContentType;
-                        context.Response.Write(Constants.Css);
-                    }
-                    else
-                    {
-                        // if the id is echoed back
-                        // then this person is black listed
-                        context.Response.ContentType = Constants.TextContentType;
-                        context.Response.Write(id);
-                    }
+                    // this is a css blackout
+                    context.Response.ContentType = Constants.CssContentType;
+                    context.Response.Write(Constants.Css);
                 }
             }
             catch (Exception)

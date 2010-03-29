@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4D0472
 		Constants.cs = Constants.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetKillswitch.BadClient", "DotNetKillswitch.BadClient\DotNetKillswitch.BadClient.csproj", "{CC4E355C-7CCC-416D-9740-E026C1F11D1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3387CD81-A2A5-4AA8-8E94-1DD1105B9115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4E355C-7CCC-416D-9740-E026C1F11D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4E355C-7CCC-416D-9740-E026C1F11D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4E355C-7CCC-416D-9740-E026C1F11D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4E355C-7CCC-416D-9740-E026C1F11D1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

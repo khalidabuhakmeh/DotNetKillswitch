@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Net;
+using System.Net.Mime;
+using System.Web;
 
 namespace DotNetKillswitch.Core.Client
 {
@@ -46,17 +48,6 @@ namespace DotNetKillswitch.Core.Client
             return Instance._server != null && Instance._clientId.HasValue
                        ? string.Format( Constants.CssLink, Instance._server.AbsoluteUri, Instance._clientId)
                        : string.Empty;
-        }
-
-        public static void Death()
-        {
-            using (var client = new WebClient()){                
-                var result = client.DownloadString(Instance._server);
-
-                if (Instance._clientId.HasValue &&  // the client id was set
-                    Instance._clientId.Value.ToString().CompareTo(result) == 0) // we got a black list result back
-                    throw new KillswitchException("this application has been disabled.");
-            }
         }
     }
 }
